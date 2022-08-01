@@ -1,0 +1,53 @@
+@import "src/scss/variables";
+
+.product-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .product-header {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 51px;
+      text-transform: uppercase;
+    }
+
+    .filters {
+      display: flex;
+      gap: 5px;
+
+      button {
+        width: 80px;
+        height: 17px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17px;
+        background: $gray-light;
+      }
+      button.active {
+        border: 1px solid $purple;
+      }
+    }
+  }
+
+  .product-body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
