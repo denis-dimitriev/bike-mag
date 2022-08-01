@@ -1,0 +1,33 @@
+@import "src/scss/variables";
+
+.form-search-container {
+  width: 100%;
+  height: auto;
+  border: 1.5px solid #6F73EE;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+
+  .delete-icon {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .delete-icon svg {
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .delete-icon svg:hover {
+    fill: $gray;
+  }
+}

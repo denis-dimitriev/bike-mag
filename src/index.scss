@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Jost Light';
+  font-style: normal;
+  src: url('./assets/fonts/jost-fonts/Jost300Light.otf');
+}
+
+@font-face {
+  font-family: 'Jost Regular';
+  font-style: normal;
+  src: url('./assets/fonts/jost-fonts/Jost400Book.otf');
+}
+
+@font-face {
+  font-family: 'Jost Medium';
+  font-style: normal;
+  src: url('./assets/fonts/jost-fonts/Jost500Medium.otf');
+}
+
+@font-face {
+  font-family: 'Jost Semi';
+  font-style: normal;
+  src: url('./assets/fonts/jost-fonts/Jost600Semi.otf');
+}
+
+@font-face {
+  font-family: 'Jost Bold';
+  font-style: normal;
+  src: url('./assets/fonts/jost-fonts/Jost400Book.otf');
+}
+
+:root {
+  --font-light: 'Jost Light', sans-serif;
+  --font-regular: 'Jost Regular', sans-serif;
+  --font-medium: 'Jost Medium', sans-serif;
+  --font-semi: 'Jost Semi', sans-serif;
+  --font-bold: 'Jost Bold', sans-serif;
+}
+
+* {
+  box-sizing: content-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-regular);
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}

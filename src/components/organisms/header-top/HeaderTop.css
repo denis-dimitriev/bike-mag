@@ -1,0 +1,14 @@
+/* Text colors */
+/*  COLORS  */
+.header-top-container {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 78.8%;
+  border: 1px solid #ECF3FF;
+  grid-area: content;
+}
+
+/*# sourceMappingURL=HeaderTop.css.map */

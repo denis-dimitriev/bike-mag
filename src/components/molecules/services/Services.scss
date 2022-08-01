@@ -1,0 +1,63 @@
+@import "src/scss/variables";
+
+
+.services-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "list social . . number";
+  padding: 11px 0;
+
+  & .list {
+    display: grid;
+    grid-template-columns: 39px 84px 85px;
+    gap: 30px;
+    grid-area: list;
+
+    & .text {
+      width: 100px;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 17px;
+      display: inline-grid;
+    }
+  }
+
+  & .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    grid-area: social;
+
+    & svg {
+      width: 17px;
+      cursor: pointer;
+    }
+  }
+
+  .services-login {
+    grid-area: number;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    & .badge {
+      font-family: var(--font-medium);
+      font-size: 13px;
+      line-height: 17px;
+      color: $black;
+    }
+
+    & .login-icon {
+      cursor: pointer;
+
+      & svg {
+        width: 24px;
+      }
+    }
+  }
+}

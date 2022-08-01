@@ -1,0 +1,11 @@
+@import "src/scss/variables";
+
+.logo {
+
+  & a {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 43px;
+    color: $black;
+  }
+}

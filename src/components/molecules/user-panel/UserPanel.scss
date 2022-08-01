@@ -1,0 +1,13 @@
+.user-panel {
+    margin-left: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 26px;
+
+    & svg {
+      width: 23px;
+      cursor: pointer;
+    }
+}

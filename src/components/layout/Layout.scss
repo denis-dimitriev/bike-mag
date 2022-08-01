@@ -1,0 +1,30 @@
+@import "src/scss/variables";
+
+.layout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 1440px) 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ". main .";
+  align-items: center;
+  justify-content: center;
+  background-color: $gray-light;
+  z-index: 1000;
+
+  main {
+    grid-area: main;
+    max-width: 1440px;
+    min-height: 100vh;
+    height: 100%;
+    background-color: $white;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .layout {
+    grid-template-columns: minmax(auto, 1440px);
+    grid-template-areas: "main";
+  }
+}
+

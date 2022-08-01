@@ -1,0 +1,10 @@
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  & svg {
+    padding: 0 5px 0 0;
+  }
+}
