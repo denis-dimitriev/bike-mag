@@ -1,4 +1,5 @@
 import "./Homepage.scss";
+
 import { Carousel } from "../../organisms/carousel/Carousel";
 import { ProductContainer } from "../../organisms/product-container/ProductContainer";
 

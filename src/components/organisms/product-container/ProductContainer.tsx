@@ -17,6 +17,13 @@ export const ProductContainer = () => {
       </div>
       <div className="product-body">
         <CardItem />
+        <CardItem />
+        <CardItem />
+        <CardItem />
+        <CardItem />
+        <CardItem />
+        <CardItem />
+        <CardItem />
       </div>
     </div>
   );

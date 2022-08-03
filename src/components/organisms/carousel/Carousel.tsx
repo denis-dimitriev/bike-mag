@@ -52,7 +52,7 @@ export const Carousel = () => {
   const onClickButtonHandler = useCallback((id: number) => {
     setAds((prevState) =>
       prevState.map((slide) => {
-        if (slide) {
+        if (slide.active) {
           slide.active = false;
         }
         if (slide.id === id) {
