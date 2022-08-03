@@ -18,10 +18,15 @@
   .header-body {
     grid-area: content;
     display: grid;
-    grid-template-columns: 130px 100px 3fr 1fr;
+    grid-template-columns: 130px 105px 3fr 1fr;
     grid-template-rows: 1fr;
     gap: 20px;
     align-items: center;
     justify-content: space-between;
+
+   & button svg {
+     margin-right: 5px;
+     fill: #FFFFFF;
+    }
   }
 }

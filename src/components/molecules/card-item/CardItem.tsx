@@ -1,9 +1,9 @@
 import "./CardItem.scss";
 
-import { ReactComponent as FavoritesIcon } from "../../../assets/icons/favorite-heart.svg";
-import { ReactComponent as ShoppingCartIcon } from "../../../assets/icons/shopping-cart.svg";
 import Button from "../../atoms/ui/button/Button";
 import samo from "./samo.png";
+import { Circle } from "../../atoms/ui/circle/Circle";
+import { CartIcon, FavoriteIcon } from "../../../assets";
 
 export const CardItem = () => {
   return (
@@ -28,12 +28,12 @@ export const CardItem = () => {
             <span className="current-price">45000 MDL</span>
           </div>
           <div className="actions">
-            <span className="circle-btn">
-              <FavoritesIcon />
-            </span>
-            <span className="circle-btn">
-              <ShoppingCartIcon />
-            </span>
+            <Circle>
+              <FavoriteIcon />
+            </Circle>
+            <Circle>
+              <CartIcon />
+            </Circle>
           </div>
         </div>
         <Button variant="primary">Купить</Button>

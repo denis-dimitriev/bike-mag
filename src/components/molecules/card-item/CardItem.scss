@@ -31,6 +31,8 @@
     gap: 15px;
 
     .title {
+      width: 100%;
+      padding-top: 5px;
       font-weight: 600;
       font-size: 18px;
       line-height: 26px;
@@ -93,27 +95,6 @@
         gap: 3px;
         box-sizing: border-box;
 
-        & .circle-btn {
-          width: 50px;
-          height: 50px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 50%;
-          border: 1px solid $gray-light;
-          box-sizing: border-box;
-          cursor: pointer;
-          transition: border 0.2s ease-in-out;
-
-          & svg {
-            width: 28px;
-            height: 28px;
-          }
-        }
-
-        .circle-btn:hover {
-          border: 1px solid $purple;
-        }
       }
     }
 

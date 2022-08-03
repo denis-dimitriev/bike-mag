@@ -3,7 +3,7 @@
 .carousel-container {
   margin-top: 30px;
   width: 100%;
-  height: 600px;
+  height: 500px;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -23,15 +23,15 @@
 
 
     & .container-body {
-      width: 780px;
-      margin-left: 125px;
+      width: 60%;
+      margin-left: 10%;
       display: flex;
       flex-direction: column;
+      justify-content: space-around;
 
       & .badge {
         width: 53px;
         height: 20px;
-        margin-top: 42px;
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
@@ -40,9 +40,7 @@
       }
 
       & .label {
-        max-width: 615px;
-        margin-top: 60px;
-        height: 102px;
+        width: 100%;
         font-style: normal;
         font-weight: 600;
         font-size: 35px;
@@ -54,16 +52,17 @@
       }
 
       & button {
-        margin-top: 80px;
-        width: 177px;
+        width: 180px;
         height: 53px;
+        justify-content: center;
       }
     }
   }
 
   .carousel-item-container.fadeOut {
     -webkit-filter: blur(17px);
-    opacity: 0.1;
+    opacity: 0;
+    transform: translateX(1000px);
     transition-delay: 0.1s;
     visibility: hidden;
   }
@@ -76,21 +75,21 @@
   }
 
   .container-bg {
-    width: 538px;
+    width: 35%;
     height: 100%;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    bottom: 0;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
-    margin-right: 32px;
+    z-index: -1;
 
     img {
       width: 100%;
+      height: 100%;
     }
   }
 }
 
-@media only screen and (max-width: 1400px) {
-  .carousel-container {
-    width: 100%;
-  }
-}
